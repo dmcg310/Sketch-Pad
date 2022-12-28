@@ -1,8 +1,55 @@
 const container = document.querySelector("#container");
 
-for (i = 0; i < 256; i++) {
-  const div = document.createElement("div");
-  div.setAttribute("style", "border-radius: 3px; padding: 15px;");
-  container.appendChild(div);
-  div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+let four = document.getElementById("four");
+four.addEventListener("click", (event) => {
+  fourGrid();
+});
+
+let eight = document.getElementById("eight");
+eight.addEventListener("click", (event) => {
+  eightGrid();
+});
+
+let sixteen = document.getElementById("sixteen");
+sixteen.addEventListener("click", (event) => {
+  sixteenGrid();
+});
+
+function fourGrid() {
+  for (i = 0; i < 16; i++) {
+    const div = document.createElement("div");
+    div.setAttribute("style", "border-radius: 3px; padding: 60px;");
+    container.appendChild(div);
+    div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", (event) => {
+      container.removeChild(div);
+    });
+  }
+}
+
+function eightGrid() {
+  for (i = 0; i < 64; i++) {
+    const div = document.createElement("div");
+    div.setAttribute("style", "border-radius: 3px; padding: 30px;");
+    container.appendChild(div);
+    div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", (event) => {
+      container.removeChild(div);
+    });
+  }
+}
+
+function sixteenGrid() {
+  for (i = 0; i < 256; i++) {
+    const div = document.createElement("div");
+    div.setAttribute("style", "border-radius: 3px; padding: 15px;");
+    container.appendChild(div);
+    div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", (event) => {
+      container.removeChild(div);
+    });
+  }
 }
