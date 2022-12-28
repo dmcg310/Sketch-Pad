@@ -1,0 +1,16 @@
+body {
+  background-color: grey;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#container-layout {
+  display: flex;
+  max-width: 525px;
+}
