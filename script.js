@@ -18,7 +18,7 @@ sixteen.addEventListener("click", (event) => {
 function fourGrid() {
   for (i = 0; i < 16; i++) {
     const div = document.createElement("div");
-    div.setAttribute("style", "border-radius: 3px; padding: 60px;");
+    div.setAttribute("style", "padding: 60px;");
     container.appendChild(div);
     div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
     let reset = document.getElementById("reset");
@@ -31,7 +31,7 @@ function fourGrid() {
 function eightGrid() {
   for (i = 0; i < 64; i++) {
     const div = document.createElement("div");
-    div.setAttribute("style", "border-radius: 3px; padding: 30px;");
+    div.setAttribute("style", "padding: 30px;");
     container.appendChild(div);
     div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
     let reset = document.getElementById("reset");
@@ -44,7 +44,7 @@ function eightGrid() {
 function sixteenGrid() {
   for (i = 0; i < 256; i++) {
     const div = document.createElement("div");
-    div.setAttribute("style", "border-radius: 3px; padding: 15px;");
+    div.setAttribute("style", "padding: 15px;");
     container.appendChild(div);
     div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
     let reset = document.getElementById("reset");
