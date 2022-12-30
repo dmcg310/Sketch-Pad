@@ -20,7 +20,13 @@ function fourGrid() {
     const div = document.createElement("div");
     div.setAttribute("style", "padding: 60px;");
     container.appendChild(div);
-    div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+    div.addEventListener(
+      "mouseover",
+      (e) => (e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`)
+    );
     let reset = document.getElementById("reset");
     reset.addEventListener("click", (event) => {
       container.removeChild(div);
@@ -33,7 +39,13 @@ function eightGrid() {
     const div = document.createElement("div");
     div.setAttribute("style", "padding: 30px;");
     container.appendChild(div);
-    div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+    div.addEventListener(
+      "mouseover",
+      (e) => (e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`)
+    );
     let reset = document.getElementById("reset");
     reset.addEventListener("click", (event) => {
       container.removeChild(div);
@@ -46,7 +58,13 @@ function sixteenGrid() {
     const div = document.createElement("div");
     div.setAttribute("style", "padding: 15px;");
     container.appendChild(div);
-    div.addEventListener("mouseover", (e) => e.target.classList.add("my-color-class"));
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+    div.addEventListener(
+      "mouseover",
+      (e) => (e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`)
+    );
     let reset = document.getElementById("reset");
     reset.addEventListener("click", (event) => {
       container.removeChild(div);

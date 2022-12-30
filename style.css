@@ -28,7 +28,6 @@ button {
   padding-top: 25px;
   color: #a5a5a5;
 }
-
 .button {
   width: 500px;
   margin: auto;
@@ -49,8 +48,4 @@ button {
   display: flex;
   margin: auto;
   max-width: 480px;
-}
-
-.my-color-class {
-  background-color: blue;
 }
