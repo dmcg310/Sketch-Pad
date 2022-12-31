@@ -28,6 +28,7 @@ button {
   padding-top: 25px;
   color: #a5a5a5;
 }
+
 .button {
   width: 500px;
   margin: auto;
@@ -36,16 +37,7 @@ button {
   padding: 20px 0 0 0;
 }
 
-#container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#container-layout {
+#grid-container {
+  display: grid;
   background-color: #e3e3e3;
-  border: solid 4px #f95959;
-  display: flex;
-  margin: auto;
-  max-width: 480px;
 }
