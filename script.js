@@ -9,7 +9,7 @@ grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 grid.style.width = "500px";
 grid.style.height = "500px";
-grid.style.border = "#f95959 5px solid";
+grid.style.border = "#000000 3px solid";
 grid.style.backgroundColor = "white";
 
 if (size > 0 && size <= 100) {
@@ -47,7 +47,7 @@ if (size > 0 && size <= 100) {
     orange.addEventListener("click", (event) => {
       gridElement.addEventListener(
         "mouseover",
-        (e) => (e.target.style.backgroundColor = "orange")
+        (e) => (e.target.style.backgroundColor = "darkorange")
       );
     });
 
