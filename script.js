@@ -1,19 +1,19 @@
-let defaultSize = prompt(
+let size = prompt(
   "Choose a size for the sketch pad (max 100).\nPlease note that the larger the number the longer the page will take to load."
 );
 
 const container = document.querySelector("#grid-container");
 const grid = document.getElementById("grid-container");
 
-grid.style.gridTemplateColumns = `repeat(${defaultSize}, 1fr)`;
-grid.style.gridTemplateRows = `repeat(${defaultSize}, 1fr)`;
+grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 grid.style.width = "500px";
 grid.style.height = "500px";
 grid.style.border = "#f95959 5px solid";
 grid.style.backgroundColor = "white";
 
-if (defaultSize > 0 && defaultSize <= 100) {
-  for (let i = 0; i < defaultSize * defaultSize; i++) {
+if (size > 0 && size <= 100) {
+  for (let i = 0; i < size * size; i++) {
     const gridElement = document.createElement("div");
     gridElement.classList.add("grid-element");
     grid.appendChild(gridElement);
