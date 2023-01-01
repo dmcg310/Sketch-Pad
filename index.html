@@ -10,7 +10,9 @@
   </head>
   <body>
     <h1>Sketch Pad</h1>
-    <button type="submit" id="test">New Pad</button>
+    <div class="new-pad">
+      <button type="submit" id="new-pad">New Pad</button>
+    </div>
     <div id="container">
       <div id="container-2">
         <div id="grid-container"></div>
@@ -27,6 +29,11 @@
         <button type="reset" id="reset">Reset</button>
       </div>
     </div>
-    <div class="footer">Darragh McGurk</div>
+    <div class="footer">
+      Darragh McGurk •
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </div>
   </body>
 </html>

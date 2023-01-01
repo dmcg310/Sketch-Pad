@@ -1,28 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-  background-color: #233142;
+  background-color: #003554;
   font-family: "Poppins", sans-serif;
 }
 
 h1 {
   color: #e3e3e3;
-  margin-top: 0;
-  padding: 0;
   text-align: center;
   font-size: 35px;
   text-shadow: 0 0 5px #000000;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 button {
-  border: #e3e3e3 2px solid;
-  border-radius: 3px;
-  box-shadow: 0 0 3px #000000;
+  box-shadow: 0 0 5px #000000;
 }
 
 .footer {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 12px;
   color: #e3e3e3;
 }
 
@@ -37,6 +35,12 @@ button {
   align-items: center;
   justify-content: center;
   gap: 4px;
+}
+
+.new-pad {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 #rainbow,
@@ -56,6 +60,13 @@ button {
   cursor: pointer;
 }
 
+#new-pad {
+  border: solid 2px #000000;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px 100px 5px 100px;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -64,7 +75,6 @@ button {
 
 #grid-container {
   display: grid;
-  background-color: #e3e3e3;
 }
 
 #rainbow {

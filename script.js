@@ -1,7 +1,7 @@
-const newPad = document.getElementById("test");
+const newPad = document.getElementById("new-pad");
 newPad.addEventListener("click", (event) => {
   let size = prompt(
-    "Choose a size for the sketch pad (max 100).\nPlease note that the larger the number the longer the page will take to load."
+    "Choose a size for the sketch pad (max 80).\nPlease note that the larger the number the longer the page will take to load."
   );
 
   const grid = document.getElementById("grid-container");
@@ -13,7 +13,7 @@ newPad.addEventListener("click", (event) => {
   grid.style.border = "#000000 3px solid";
   grid.style.backgroundColor = "white";
 
-  if (size > 0 && size <= 100) {
+  if (size > 0 && size <= 80) {
     for (let i = 0; i < size * size; i++) {
       const gridElement = document.createElement("div");
       gridElement.classList.add("grid-element");
